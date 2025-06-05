@@ -1,0 +1,20 @@
+diff --git a/node_modules/react-native/scripts/codegen/generate-artifacts-executor.js b/node_modules/react-native/scripts/codegen/generate-artifacts-executor.js
+index 42e6ce5..a6b53a8 100644
+--- a/node_modules/react-native/scripts/codegen/generate-artifacts-executor.js
++++ b/node_modules/react-native/scripts/codegen/generate-artifacts-executor.js
+@@ -198,6 +198,7 @@ function printDeprecationWarningIfNeeded(dependency) {
+ function extractLibrariesFromConfigurationArray(configFile, dependencyPath) {
+   return configFile.codegenConfig.libraries.map(config => {
+     return {
++      name: configFile.name,
+       config,
+       libraryPath: dependencyPath,
+     };
+@@ -213,6 +214,7 @@ function extractLibrariesFromJSON(configFile, dependencyPath) {
+     const config = configFile.codegenConfig;
+     return [
+       {
++        name: configFile.name,
+         config,
+         libraryPath: dependencyPath,
+       },

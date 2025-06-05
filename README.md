@@ -11,3 +11,5 @@ This reproducer demonstrates a bug in `react-native` where the codegen is not pr
 ## Expected behavior
 
 The codegen should properly exclude the libraries that are disabled in the `react-native.config.js` file.
+
+Test expected behaviour and patch with `npx patch-package`
