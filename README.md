@@ -4,9 +4,9 @@ This reproducer demonstrates a bug in `react-native` where the codegen is not pr
 
 ## Steps to reproduce
 
-1. Run `yarn install`
+1. Run `yarn install` / `npm install`
 2. Run codegen or install pods `npx pod-install`
-3. Check that codegen didn't exclude `react-native-screens` from: ios/build/generated/ios/RCTThirdPartyComponentsProvider.mm
+3. Check that codegen didn't exclude `react-native-screens` from: `ios/build/generated/ios/RCTThirdPartyComponentsProvider.mm`
 
 ## Expected behavior
 
